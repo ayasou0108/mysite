@@ -1,228 +1,372 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <title>Bliss Hair</title>
-    <meta name="description" content="日常にときめきを。bliss hairは、大人のための上質なヘアサロンです。">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Webデザイナーを目指す谷村 美佳のポートフォリオサイトです。"
+    />
+    <!-- ogp -->
+    <meta property="og:url" content="https://mika-tanimura.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mika Tanimura Portfolio" />
+    <meta
+      property="og:description"
+      content="Webデザイナーを目指す谷村 美佳のポートフォリオサイトです。"
+    />
+    <meta property="og:site_name" content="Mika Tanimura Portfolio" />
+    <meta
+      property="og:image"
+      content="https://mika-tanimura.com/assets/images/ogp.png"
+    />
+    <!-- favicon apple-touch-icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/android-chrome-256x256.png"
+    />
+
+    <title>Mika Tanimura Portfolio</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/destyle.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- js -->
+    <script src="assets/js/main.js" defer></script>
   </head>
 
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="Mika Tanimura Portfolioのロゴ"
+              width="50"
+              height="35"
+            />
+          </a>
+        </div>
 
-<body>
-  <div class="container">
-    <header>
-      <div class="header-inner">
-      <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="Bliss Hair"></a></h1>
-      <nav>
-        <ul>
-          <li><a href="#concept">Concept</a></li>
-          <li><a href="#price">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#access">Access</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#works" class="header__nav-link">WORKS</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link">ABOUT</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contact" class="header__nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- モバイルメニュー -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="mobile__nav" id="mobileNav">
+          <button
+            class="mobile__close"
+            id="mobileClose"
+            aria-label="Close menu"
+          >
+            ×
+          </button>
+          <ul class="mobile__nav-list">
+            <li class="mobile__nav-item">
+              <a href="#works" class="mobile__nav-link">WORKS</a>
+            </li>
+            <li class="mobile__nav-item">
+              <a href="#about" class="mobile__nav-link">ABOUT</a>
+            </li>
+            <li class="mobile__nav-item">
+              <a href="#contact" class="mobile__nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section id="hero">
-        <div class="hero-inner">
-          <h1 class="hero-title">日常にときめきを。</h1>
-          <p class="hero-text">Bliss Hair</p>
-          <a href="#" class="hero-button">予約する</a>
+      <section class="hero">
+        <div class="hero__title">
+          <img src="assets/images/mv-text.png" alt="portfolioの文字" />
         </div>
       </section>
-      
-      <section id="concept" class="wrapper">
-        <div class="concept-inner">
-        <div class="text">
-          <h2 class="title">Concept</h2>
-          <p class="large">
-            あなたらしさに、静かに寄り添う。
+
+      <section id="works" class="works">
+        <h2>WORKS</h2>
+        <div class="works__grid">
+          <!-- <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="#" alt="作品1" />
+              </div>
+              <div class="works__text">
+                <h3>Website</h3>
+                <p>Mika Tanimura Portfolio</p>
+              </div>
+            </article>
+          </a> -->
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img
+                  src="assets/images/hare.png"
+                  alt="女性のためのケアサロン晴レ様HPの画像"
+                />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Website<span class="works__category works__category--real"
+                    >実案件</span
+                  >
+                </h3>
+                <p>女性のためのケアサロン 晴レ 様</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/sugutabe.png" alt="スグ食べHPの画像" />
+              </div>
+              <div class="works__text">
+                <h3>Website<span class="works__category works__category--personal">自主制作</span></h3>
+                <p>スグ食べ（架空）</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/LP-FV.png" alt="LPの画像" />
+              </div>
+              <div class="works__text">
+                <h3>LP<span class="works__category works__category--personal">自主制作</span></h3>
+                <p>美容の販促LP（架空）</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/banner.png" alt="バナー作品の画像" />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Banner<span class="works__category works__category--proposal">提案案件（コンペ）</span
+                  ><span class="works__category works__category--personal">自主制作</span>
+                </h3>
+                <p>美容の販促バナー（架空）</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/banner2.png" alt="バナー作品の画像" />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Banner<span class="works__category works__category--proposal">提案案件（コンペ）</span>
+                </h3>
+                <p>イベントの告知バナー</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/banner3.png" alt="バナー作品の画像" />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Banner<span class="works__category works__category--proposal">提案案件（コンペ）</span>
+                </h3>
+                <p>広告バナー</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img
+                  src="assets/images/Print Design.png"
+                  alt="チラシ作品の画像"
+                />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Print Design<span class="works__category works__category--proposal"
+                    >提案案件（コンペ）</span
+                  >
+                </h3>
+                <p>チラシ、書籍表紙</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/SNS.png" alt="SNS作品の画像" />
+              </div>
+              <div class="works__text">
+                <h3>
+                  SNS Channel Design<span class="works__category works__category--proposal"
+                    >提案案件（コンペ）</span
+                  >
+                </h3>
+                <p>youtubeやXのバナー、アイコン</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#" class="works__link">
+            <article class="works__item">
+              <div class="works__image">
+                <img src="assets/images/HP-FV.png" alt="HPのFVの画像" />
+              </div>
+              <div class="works__text">
+                <h3>
+                  Webデザイン<span class="works__category works__category--proposal"
+                    >提案案件（コンペ）</span
+                  >
+                </h3>
+                <p>HPのFV</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <div class="about__inner">
+          <p class="about__name">谷村 美佳 - MIKA TANIMURA</p>
+          <p class="about__bio">
+            広島在住。2児の母。<br />
+            Webデザイナーを目指して、2025年6月からデジタルハリウッドSTUDIO広島へ入学し、<br />
+            本格的にWebデザインの勉強をしています。
           </p>
-          <p> bliss hair は、一人ひとりの個性を大切にしたスタイル提案を行うヘアサロンです。</p>
-          <p>丁寧なカウンセリングを通して、髪質・骨格・ライフスタイルに合わせた“今のあなたに似合う”美しさをご提案します。</p>
-          <p>自然体で心地よく、自信が持てる毎日を、ヘアスタイルから。</p>
-          <a href="#" class="btn btn-3 hover-border-1"><span>詳細はこちら</span></a>
-        </div>
-        <div class="img">
-          <img src="img/concept-img.jpg" alt="hero-img">
-        </div>
-        </div>
-      </section>
-
-      <section id="price">
-        <h2 class="title">Menu</h2>
-        <table class="price-table">
-          <thead>
-            <tr>
-              <th>メニュー</th>
-              <th>料金（税込）</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>カット（一般）</td>
-              <td>¥4,500</td>
-            </tr>
-            <tr>
-              <td>カット（学生）</td>
-              <td>¥3,500</td>
-            </tr>
-            <tr>
-              <td>カラー</td>
-              <td>¥6,000〜</td>
-            </tr>
-            <tr>
-              <td>パーマ</td>
-              <td>¥7,000〜</td>
-            </tr>
-            <tr>
-              <td>縮毛矯正</td>
-              <td>¥12,000〜</td>
-            </tr>
-            <tr>
-              <td>ヘッドスパ</td>
-              <td>¥3,000</td>
-            </tr>
-            <tr>
-              <td>トリートメント</td>
-              <td>¥2,500〜</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      
-      <section id="gallery">
-        <h2 class="title">Gallery</h2>
-        <div class="gallery-images">
-          <img src="img/gallery-1.jpg" alt="gallery-1">
-          <img src="img/gallery-2.jpg" alt="gallery-2">
-          <img src="img/gallery-3.jpg" alt="gallery-3">
+          <div class="about__skills">
+            <span class="about__skills-label">SKILLS :</span>
+            <ul class="about__skills-list">
+              <li class="about__skills-item">Photoshop</li>
+              <li class="about__skills-item">Illustrator</li>
+              <li class="about__skills-item">Figma</li>
+              <li class="about__skills-item">Visual Studio Code</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="blog" class="wrapper">
-        <h2 class="title">Blog</h2>
-        <ul class="blog-list">
-          <li class="blog-item">
-            <a class="blog-link" href="#">
-              <div class="blog-img">
-              <img src="img/blog-1.jpg" alt="#">
+      <div class="background-wrapper">
+        <section id="contact" class="contact">
+          <h2>CONTACT</h2>
+          <div class="contact__inner">
+            <!-- <div class="contact__address">
+              〒730‑0802&emsp;広島県広島市中区本川町3丁目1‑5&emsp;<br
+                class="br-sp"
+              />シーアイマンション 2F
+            </div>
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.040599498289!2d132.4483524755976!3d34.40031397302792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa274fa700001%3A0x1148ea7e499f6ac7!2z44Od44O844OI44Kk44Oz44Kv!5e0!3m2!1sja!2sjp!4v1754057813798!5m2!1sja!2sjp"
+                width="684"
+                height="290"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div> -->
+            <p class="contact__info">
+              詳細な事例やお仕事のご相談など、<br
+                class="br-sp"
+              />下記までお気軽にご連絡ください。
+            </p>
+          </div>
+
+          <form action="#" method="post">
+            <fieldset>
+              <legend>お客様情報</legend>
+              <div class="form-group">
+                <label for="name">お名前（会社名）</label>
+                <input type="text" name="name" id="name" required />
               </div>
-              <div class="blog-text">
-              <h3>乾燥対策！美容師がおすすめする保湿ケア方法</h3>
-              <div class="blog-date"><i class="bi bi-clock postList__date-icon"></i><time class="blog-date-text" datetime="2025-01-01">2025.01.01</time></div>
+
+              <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" name="email" id="email" required />
               </div>
-              <div class="blog-icon">
-              <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4373/8ba85895d1ea5603567c52416b9fdf2a729edfd7.png" width="60" class="blog-icon-img">
+
+              <div class="form-group">
+                <label for="tel">電話番号</label>
+                <input type="tel" name="tel" id="tel" required />
               </div>
-            </a>
-          </li>
+            </fieldset>
 
-          <li class="blog-item">
-            <a class="blog-link" href="#">
-              <div class="blog-img">
-              <img src="img/blog-2.jpg" alt="#">
+            <fieldset>
+              <legend>お問い合わせ内容</legend>
+              <div class="form-group">
+                <label for="message">お問い合わせ内容</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="9"
+                  required
+                ></textarea>
               </div>
-              <div class="blog-text">
-              <h3>春の新生活を彩る！スタッフおすすめの厳選アロマ</h3>
-              <div class="blog-date"><i class="bi bi-clock postList__date-icon"></i><time class="blog-date-text" datetime="2025-03-01">2025.03.01</time></div>
-              </div>
-              <div class="blog-icon">
-              <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4373/8ba85895d1ea5603567c52416b9fdf2a729edfd7.png" width="60" class="blog-icon-img">
-              </div>
-            </a>
-          </li>
-
-          <li class="blog-item">
-            <a class="blog-link" href="#">
-              <div class="blog-img">
-              <img src="img/blog-3.jpg" alt="#">
-              </div>
-              <div class="blog-text">
-              <h3>４月の定休日のお知らせ</h3>
-              <div class="blog-date"><i class="bi bi-clock postList__date-icon"></i><time class="blog-date-text" datetime="2025-04-01">2025.04.01</time></div>
-              </div>
-              <div class="blog-icon">
-              <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4373/8ba85895d1ea5603567c52416b9fdf2a729edfd7.png" width="60" class="blog-icon-img">
-              </div>
-            </a>
-          </li>
-
-          <li class="blog-item">
-            <a class="blog-link" href="#">
-              <div class="blog-img">
-              <img src="img/hero-img.jpg" alt="#">
-              </div>
-              <div class="blog-text">
-              <h3>ホームページをリニューアルしました</h3>
-              <div class="blog-date"><i class="bi bi-clock postList__date-icon"></i><time class="blog-date-text" datetime="2025-04-01">2025.04.01</time></div>
-              </div>
-              <div class="blog-icon">
-              <img src="https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/702833/4373/8ba85895d1ea5603567c52416b9fdf2a729edfd7.png" width="60" class="blog-icon-img">
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="access" class="wrapper">
-        <h2 class="title">Access</h2>
-        <div class="access-inner">
-        <div class="content-access">
-        <h3>Bliss Hair</h3>
-        <p>〒000-0000 広島県広島市00-00</p>
-        <p>Tel:000-111-2222</p>
-        <p>定休日：月曜日・第一火曜日・第三火曜日</p>
-        <p>駐車場：駐車場のご利用を希望される場合は、事前にご予約ください。</p>
-        <a href="#" class="access-button">WEBでのご予約はこちら</a>
-        </div>
-
-<div class="content-contact">
-<form action="#" method="post" class="form">
-  <div class="row">
-    <label for="name">お名前<span class="req">（必須）</span></label>
-    <input type="text" id="name" name="name" placeholder="例：山田太郎" required>
-  </div>
-  <div class="row">
-    <label for="email">メールアドレス<span class="req">（必須）</span></label>
-    <input type="email" id="email" name="email" placeholder="例：example@example.com" required>
-  </div>
-  <div class="row">
-    <label for="msg">お問い合わせ内容</label>
-    <textarea id="msg" name="msg" placeholder="お問い合わせ内容をご記入ください" rows="5"></textarea>
-  </div>
-  <div class="row right">
-    <button type="submit">送信</button>
-  </div>
-</form>
-</div>
-        </div>
-
-
-
-
-
-
-
-
-      </section>
-
-
-
-    </main>
-    <footer>
-      <div class="wrapper">
-        <p>&copy; 2025 Bliss Hair. All rights reserved.</p>
+            </fieldset>
+            <div class="form-group">
+              <button type="submit">送信</button>
+            </div>
+          </form>
+        </section>
+        <div class="footer-divider"></div>
+        <footer class="footer">
+          <div class="footer__inner">
+            <small>©︎ MT Portfolio.</small>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#works" class="footer__nav-link">WORKS</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#about" class="footer__nav-link">ABOUT</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#contact" class="footer__nav-link">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <p class="back-to-top"><a href="#">( Back to top )</a></p>
+        </footer>
       </div>
-    </footer>
-  </div>
-</body>
+    </main>
+  </body>
 </html>
